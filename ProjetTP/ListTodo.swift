@@ -15,5 +15,19 @@ class ListTodo{
         self.liste = liste
         self.nom = nom
     }
+    
+    func add(todo: ToDo){
+        self.liste.append(todo)
+        
+    }
+    
+    func remove(todo: ToDo){
+        for i in 0...self.liste.count - 1 {
+            if(liste[i].nom == todo.nom && liste[i].aFaire == todo.aFaire && liste[i].date == todo.date && liste[i].desc == todo.desc){
+                print("suppr")
+                liste.remove(at: i)
+            }
+        }
+    }
 
 }

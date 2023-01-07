@@ -18,28 +18,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.NbelementCategory.text = filteredMyData[indexPath.row].liste.count.description
         return cell
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableVue.dataSource = self
         tableVue.delegate = self
         barreRecherche.delegate = self
-        var listeToDo = [ToDo]()
-        for t in 1...50{
-            let desc = "ceci est une desc de " + String(t)
-            let nom = "nom du produit " + String(t)
-            let n = ToDo(nom: nom, desc: desc)
-            listeToDo.append(n)
-            }
-        let travail = ListTodo(liste: listeToDo, nom: "travail")
-        let perso = ListTodo(liste: listeToDo, nom: "persoa")
-        myData.append(travail)
-        myData.append(perso)
-        filteredMyData.append(travail)
-        print(type(of: travail))
-        filteredMyData.append(perso)
-
-        // Do any additional setup after loading the view.
-    }
+        }
 
     @IBOutlet var barreRecherche: UISearchBar!
 
@@ -71,14 +56,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     myData.append(liste)
                     filteredMyData.append(liste)
                     tableVue.reloadData()
-                    print(nomListe.text!)
                 }
             }
-        }
-    }
-    @IBAction func cancel(_ unwindSegue: UIStoryboardSegue) {
-        if let vc = unwindSegue.source as? AddListController {
-            vc.dismiss(animated: true, completion: nil)
         }
     }
     
@@ -86,7 +65,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if let vc = segue.destination as? ViewToDo{
             let row = tableVue.indexPathForSelectedRow!.row
             vc.data = filteredMyData[row]
+            vc.MainController = self
         }
+        
     }
+    override func viewDidAppear(_ animated: Bool) { 
+             tableVue.reloadData()
+    }
+    
 
 }

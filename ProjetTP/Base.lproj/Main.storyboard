@@ -37,13 +37,6 @@
                                     <segue destination="apo-Gs-G6G" kind="unwind" unwindAction="add:" id="SKC-oY-Gxi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Erd-4Y-lER">
-                                <rect key="frame" x="376" y="20" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="apo-Gs-G6G" kind="unwind" unwindAction="cancel:" id="RwS-f3-Yfj"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z6S-J6-Z5V"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -281,65 +274,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ajouter une nouvelle activité" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOZ-DM-JXI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajouter une nouvelle activité" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOZ-DM-JXI">
                                 <rect key="frame" x="54" y="89" width="215" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nom de l'activité" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93b-7H-bWO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nom de l'activité" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93b-7H-bWO">
                                 <rect key="frame" x="54" y="178" width="128" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description de l'activité" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BV5-uN-oly">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description de l'activité" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BV5-uN-oly">
                                 <rect key="frame" x="54" y="330" width="179" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3gf-iG-Cgy">
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3gf-iG-Cgy">
                                 <rect key="frame" x="54" y="221" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kDz-yR-tVx">
-                                <rect key="frame" x="54" y="404" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kDz-yR-tVx">
+                                <rect key="frame" x="54" y="361" width="32" height="77"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9fB-og-w50">
+                            <navigationBar contentMode="scaleToFill" verticalHuggingPriority="253" translatesAutoresizingMaskIntoConstraints="NO" id="9fB-og-w50">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPq-ba-uio">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPq-ba-uio">
                                 <rect key="frame" x="346" y="14" width="40" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="DQ7-BX-fKY" kind="unwind" unwindAction="cancel:" id="Bcs-eQ-ahP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcF-le-iTw">
-                                <rect key="frame" x="103" y="678" width="176" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcF-le-iTw">
+                                <rect key="frame" x="103" y="768" width="176" height="30"/>
                                 <state key="normal" title="Valider l'ajout de l'activité"/>
                                 <connections>
                                     <segue destination="DQ7-BX-fKY" kind="unwind" unwindAction="add:" id="6Ay-zB-itG"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Z73-M6-Diy">
-                                <rect key="frame" x="0.0" y="488" width="414" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <datePicker contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Z73-M6-Diy">
+                                <rect key="frame" x="0.0" y="522" width="414" height="216"/>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date limite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUS-yg-46y">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date limite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUS-yg-46y">
                                 <rect key="frame" x="47" y="459" width="81" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -347,6 +330,33 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yuI-N3-djo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZUS-yg-46y" firstAttribute="top" secondItem="kDz-yR-tVx" secondAttribute="bottom" constant="21" id="0Sw-u7-qF6"/>
+                            <constraint firstItem="EOZ-DM-JXI" firstAttribute="leading" secondItem="93b-7H-bWO" secondAttribute="leading" id="2jn-aF-q8E"/>
+                            <constraint firstItem="Z73-M6-Diy" firstAttribute="centerX" secondItem="WYJ-G6-mTH" secondAttribute="centerX" id="3Gq-ie-hji"/>
+                            <constraint firstItem="kDz-yR-tVx" firstAttribute="top" secondItem="BV5-uN-oly" secondAttribute="bottom" constant="10" id="3qx-u4-hcg"/>
+                            <constraint firstItem="EOZ-DM-JXI" firstAttribute="leading" secondItem="yuI-N3-djo" secondAttribute="leading" constant="54" id="4F4-FI-yWY"/>
+                            <constraint firstItem="Z73-M6-Diy" firstAttribute="top" secondItem="ZUS-yg-46y" secondAttribute="bottom" constant="42" id="B8x-og-wX1"/>
+                            <constraint firstItem="Z73-M6-Diy" firstAttribute="trailing" secondItem="9fB-og-w50" secondAttribute="trailing" id="DZD-nL-zds"/>
+                            <constraint firstItem="EOZ-DM-JXI" firstAttribute="leading" secondItem="BV5-uN-oly" secondAttribute="leading" id="KSn-W2-2eo"/>
+                            <constraint firstItem="yuI-N3-djo" firstAttribute="trailing" secondItem="3gf-iG-Cgy" secondAttribute="trailing" constant="263" id="LZq-6P-f0t"/>
+                            <constraint firstItem="yuI-N3-djo" firstAttribute="bottom" secondItem="OcF-le-iTw" secondAttribute="bottom" constant="10" id="MI3-fA-hHn"/>
+                            <constraint firstItem="3gf-iG-Cgy" firstAttribute="top" secondItem="93b-7H-bWO" secondAttribute="bottom" constant="22" id="OCu-JF-JnX"/>
+                            <constraint firstItem="9fB-og-w50" firstAttribute="bottom" secondItem="wPq-ba-uio" secondAttribute="bottom" id="WPp-uh-cuB"/>
+                            <constraint firstItem="Z73-M6-Diy" firstAttribute="leading" secondItem="9fB-og-w50" secondAttribute="leading" id="aEQ-y2-XUC"/>
+                            <constraint firstItem="Z73-M6-Diy" firstAttribute="leading" secondItem="yuI-N3-djo" secondAttribute="leading" id="etS-o3-vnE"/>
+                            <constraint firstItem="OcF-le-iTw" firstAttribute="leading" secondItem="yuI-N3-djo" secondAttribute="leading" constant="103" id="gD3-Gt-sJe"/>
+                            <constraint firstItem="EOZ-DM-JXI" firstAttribute="leading" secondItem="3gf-iG-Cgy" secondAttribute="leading" id="hUX-Yh-gl9"/>
+                            <constraint firstItem="EOZ-DM-JXI" firstAttribute="top" secondItem="9fB-og-w50" secondAttribute="bottom" constant="45" id="j79-Mw-kY6"/>
+                            <constraint firstItem="EOZ-DM-JXI" firstAttribute="leading" secondItem="kDz-yR-tVx" secondAttribute="leading" id="lHY-wc-JHC"/>
+                            <constraint firstItem="wPq-ba-uio" firstAttribute="leading" secondItem="yuI-N3-djo" secondAttribute="leading" constant="346" id="nFA-8R-vud"/>
+                            <constraint firstItem="9fB-og-w50" firstAttribute="top" secondItem="yuI-N3-djo" secondAttribute="top" id="pGs-Vj-aT2"/>
+                            <constraint firstItem="ZUS-yg-46y" firstAttribute="leading" secondItem="yuI-N3-djo" secondAttribute="leading" constant="47" id="pqX-bq-Ona"/>
+                            <constraint firstItem="yuI-N3-djo" firstAttribute="trailing" secondItem="wPq-ba-uio" secondAttribute="trailing" constant="28" id="qtb-Vz-0jT"/>
+                            <constraint firstItem="93b-7H-bWO" firstAttribute="top" secondItem="EOZ-DM-JXI" secondAttribute="bottom" constant="68" id="rVR-pS-c0o"/>
+                            <constraint firstItem="BV5-uN-oly" firstAttribute="top" secondItem="3gf-iG-Cgy" secondAttribute="bottom" constant="75" id="twW-Fx-4yI"/>
+                            <constraint firstItem="OcF-le-iTw" firstAttribute="top" secondItem="Z73-M6-Diy" secondAttribute="bottom" constant="30" id="xhr-9m-H6j"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hLB-R6-hqO"/>
                     <connections>

@@ -43,6 +43,7 @@ class ViewToDo: UIViewController, UITableViewDataSource, UITableViewDelegate, UI
 
     var myData: [ToDo] = []
     var data: ListTodo?
+    var MainController: ViewController?
     var filteredMyData:[ToDo] = []
 
 
@@ -95,7 +96,10 @@ class ViewToDo: UIViewController, UITableViewDataSource, UITableViewDelegate, UI
             if let nameActivity = vc.AddNewNameActivity, let descActivity = vc.AddNewDescActivity, let dateActivity = vc.AddNewDateActivity {
                 if (!nameActivity.text!.isEmpty) {
                     let newTodo = ToDo(nom: nameActivity.text!, desc: descActivity.text!, date: dateActivity.date)
-                        myData.append(newTodo)
+                    myData.append(newTodo)
+                    filteredMyData.append(newTodo)
+                    data?.add(todo: newTodo)
+                    MainController?.tableVue.reloadData()
                     myData.sort{$0.date.description < $1.date.description}
                         tableVue.reloadData()
                     }
@@ -107,14 +111,14 @@ class ViewToDo: UIViewController, UITableViewDataSource, UITableViewDelegate, UI
 
     
 @IBAction func cancel(_ unwindSegue: UIStoryboardSegue) {
-    if let vc = unwindSegue.source as? AddController {
-        vc.dismiss(animated: true, completion: nil)
-    }
+
 }
     
     @IBAction func supprimerActivite(_ unwindSegue: UIStoryboardSegue) {
         if let vc = unwindSegue.source as? DescController{
             let row = tableVue.indexPathForSelectedRow!.row
+            data?.remove(todo: myData[row])
+            MainController?.tableVue.reloadData()
             myData.remove(at: row)
             filteredMyData.remove(at: row)
             myData.sort{$0.date.description < $1.date.description}
@@ -127,10 +131,6 @@ class ViewToDo: UIViewController, UITableViewDataSource, UITableViewDelegate, UI
         let row = sender.tag
         myData[row].aFaire = sender.isOn
     }
-    
-
-    
-
 }
 
 

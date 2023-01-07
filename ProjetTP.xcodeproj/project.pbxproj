@@ -39,7 +39,7 @@
 		10CF8538293F4C460015DA63 /* ListTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTodo.swift; sourceTree = "<group>"; };
 		10CF853C293F4D6C0015DA63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		10CF853F293F50B60015DA63 /* TableViewCellMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellMain.swift; sourceTree = "<group>"; };
-		67DC5EDD295F0712001A877E /* AddListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddListController.swift; path = ProjetTP/AddListController.swift; sourceTree = "<group>"; };
+		67DC5EDD295F0712001A877E /* AddListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,6 @@
 		100073DE2918E61700C6C3FC = {
 			isa = PBXGroup;
 			children = (
-				67DC5EDD295F0712001A877E /* AddListController.swift */,
 				100073E92918E61700C6C3FC /* ProjetTP */,
 				100073E82918E61700C6C3FC /* Products */,
 			);
@@ -73,6 +72,7 @@
 		100073E92918E61700C6C3FC /* ProjetTP */ = {
 			isa = PBXGroup;
 			children = (
+				67DC5EDD295F0712001A877E /* AddListController.swift */,
 				100073EA2918E61700C6C3FC /* AppDelegate.swift */,
 				100073EC2918E61700C6C3FC /* SceneDelegate.swift */,
 				100073EE2918E61700C6C3FC /* ViewToDo.swift */,
