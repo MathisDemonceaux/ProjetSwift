@@ -22,12 +22,18 @@ class ListTodo{
     }
     
     func remove(todo: ToDo){
-        for i in 0...self.liste.count - 1 {
-            if(liste[i].nom == todo.nom && liste[i].aFaire == todo.aFaire && liste[i].date == todo.date && liste[i].desc == todo.desc){
+        var fin = false
+        var index:Int = 0
+        while (index < self.liste.count-1 && fin == false ){
+            index = index + 1
+            if(liste[index].nom == todo.nom && liste[index].aFaire == todo.aFaire && liste[index].date == todo.date && liste[index].desc == todo.desc){
                 print("suppr")
-                liste.remove(at: i)
-            }
+                liste.remove(at: index)
+                fin = true
+
         }
     }
+
+        }
 
 }
