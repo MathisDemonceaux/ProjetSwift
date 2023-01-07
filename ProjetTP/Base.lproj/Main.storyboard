@@ -63,7 +63,7 @@
                                 <rect key="frame" x="20" y="26" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="MiZ-uB-SXY">
+                                    <navigationItem title="Mes listes de ToDo List" id="MiZ-uB-SXY">
                                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="U7m-OQ-wRW">
                                             <connections>
                                                 <segue destination="9R1-jg-Mu8" kind="show" id="dJ3-MS-icp"/>
@@ -303,7 +303,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <navigationBar contentMode="scaleToFill" verticalHuggingPriority="253" translatesAutoresizingMaskIntoConstraints="NO" id="9fB-og-w50">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <rect key="frame" x="20" y="0.0" width="374" height="44"/>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPq-ba-uio">
                                 <rect key="frame" x="346" y="14" width="40" height="30"/>
@@ -312,14 +312,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcF-le-iTw">
-                                <rect key="frame" x="103" y="768" width="176" height="30"/>
+                                <rect key="frame" x="100" y="768" width="176" height="30"/>
                                 <state key="normal" title="Valider l'ajout de l'activité"/>
                                 <connections>
                                     <segue destination="DQ7-BX-fKY" kind="unwind" unwindAction="add:" id="6Ay-zB-itG"/>
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Z73-M6-Diy">
-                                <rect key="frame" x="0.0" y="522" width="414" height="216"/>
+                                <rect key="frame" x="20" y="522" width="374" height="216"/>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date limite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUS-yg-46y">
                                 <rect key="frame" x="47" y="459" width="81" height="21"/>
@@ -337,6 +337,7 @@
                             <constraint firstItem="kDz-yR-tVx" firstAttribute="top" secondItem="BV5-uN-oly" secondAttribute="bottom" constant="10" id="3qx-u4-hcg"/>
                             <constraint firstItem="EOZ-DM-JXI" firstAttribute="leading" secondItem="yuI-N3-djo" secondAttribute="leading" constant="54" id="4F4-FI-yWY"/>
                             <constraint firstItem="Z73-M6-Diy" firstAttribute="top" secondItem="ZUS-yg-46y" secondAttribute="bottom" constant="42" id="B8x-og-wX1"/>
+                            <constraint firstItem="OcF-le-iTw" firstAttribute="leading" secondItem="yuI-N3-djo" secondAttribute="leading" constant="100" id="C0L-aR-mKy"/>
                             <constraint firstItem="Z73-M6-Diy" firstAttribute="trailing" secondItem="9fB-og-w50" secondAttribute="trailing" id="DZD-nL-zds"/>
                             <constraint firstItem="EOZ-DM-JXI" firstAttribute="leading" secondItem="BV5-uN-oly" secondAttribute="leading" id="KSn-W2-2eo"/>
                             <constraint firstItem="yuI-N3-djo" firstAttribute="trailing" secondItem="3gf-iG-Cgy" secondAttribute="trailing" constant="263" id="LZq-6P-f0t"/>
@@ -344,8 +345,6 @@
                             <constraint firstItem="3gf-iG-Cgy" firstAttribute="top" secondItem="93b-7H-bWO" secondAttribute="bottom" constant="22" id="OCu-JF-JnX"/>
                             <constraint firstItem="9fB-og-w50" firstAttribute="bottom" secondItem="wPq-ba-uio" secondAttribute="bottom" id="WPp-uh-cuB"/>
                             <constraint firstItem="Z73-M6-Diy" firstAttribute="leading" secondItem="9fB-og-w50" secondAttribute="leading" id="aEQ-y2-XUC"/>
-                            <constraint firstItem="Z73-M6-Diy" firstAttribute="leading" secondItem="yuI-N3-djo" secondAttribute="leading" id="etS-o3-vnE"/>
-                            <constraint firstItem="OcF-le-iTw" firstAttribute="leading" secondItem="yuI-N3-djo" secondAttribute="leading" constant="103" id="gD3-Gt-sJe"/>
                             <constraint firstItem="EOZ-DM-JXI" firstAttribute="leading" secondItem="3gf-iG-Cgy" secondAttribute="leading" id="hUX-Yh-gl9"/>
                             <constraint firstItem="EOZ-DM-JXI" firstAttribute="top" secondItem="9fB-og-w50" secondAttribute="bottom" constant="45" id="j79-Mw-kY6"/>
                             <constraint firstItem="EOZ-DM-JXI" firstAttribute="leading" secondItem="kDz-yR-tVx" secondAttribute="leading" id="lHY-wc-JHC"/>
@@ -355,6 +354,7 @@
                             <constraint firstItem="yuI-N3-djo" firstAttribute="trailing" secondItem="wPq-ba-uio" secondAttribute="trailing" constant="28" id="qtb-Vz-0jT"/>
                             <constraint firstItem="93b-7H-bWO" firstAttribute="top" secondItem="EOZ-DM-JXI" secondAttribute="bottom" constant="68" id="rVR-pS-c0o"/>
                             <constraint firstItem="BV5-uN-oly" firstAttribute="top" secondItem="3gf-iG-Cgy" secondAttribute="bottom" constant="75" id="twW-Fx-4yI"/>
+                            <constraint firstItem="Z73-M6-Diy" firstAttribute="leading" secondItem="yuI-N3-djo" secondAttribute="leading" constant="20" id="uyD-d3-OgZ"/>
                             <constraint firstItem="OcF-le-iTw" firstAttribute="top" secondItem="Z73-M6-Diy" secondAttribute="bottom" constant="30" id="xhr-9m-H6j"/>
                         </constraints>
                     </view>
